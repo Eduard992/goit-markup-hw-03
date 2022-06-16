@@ -247,7 +247,8 @@ body {
 /* our team */
 
 .team-main {
-    margin-bottom: 94px;
+    padding-bottom: 94px;
+    background-color:var(--third-bg-color);
 }
 
 
