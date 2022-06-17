@@ -9,6 +9,10 @@
     --second-txt-color: #757575;
     --third-txt-color: #ffffff;
     --hover-txt-color: #2196f3;
+    /* Shadow */
+    --card-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+        0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 *,
@@ -41,7 +45,6 @@ p {
     margin-right: auto;
     padding-left: 15px;
     padding-right: 15px;
-    outline: 2px solid red;
 }
 
 img {
@@ -100,12 +103,11 @@ body {
     display: flex;
 }
 
-.site-nav> .item:not(:last-child) {
+.site-nav>.item:not(:last-child) {
     margin-right: 50px;
 }
 
 .link {
-    /* outline: 2px solid red; */
     text-decoration: none;
     font-weight: 500;
     line-height: 1.1;
@@ -201,11 +203,12 @@ body {
     margin-bottom: 94px;
 }
 
-.listnon> .items:not(:last-child) {
+.listnon>.items:not(:last-child) {
     margin-right: 30px;
 }
 
 .features {
+    padding-bottom: 10px;
     font-size: 14px;
     font-weight: 700;
     line-height: 1.1;
@@ -246,7 +249,6 @@ body {
     display: flex;
     list-style: none;
     margin-left: -30px;
-    /* outline: 2px solid red; */
 }
 
 .wedo-list>.item {
@@ -260,8 +262,6 @@ body {
     padding-bottom: 94px;
     background-color: var(--third-bg-color);
 }
-
-
 
 
 .team-features {
@@ -281,17 +281,17 @@ body {
 .team-list {
     padding-bottom: 108px;
     display: flex;
-    margin-left: -30px;
+    /* margin-left: -30px; */
     list-style-type: none;
 }
 
-.team-list>.item * {
-    flex-basis: calc(100%/4);
-    margin-left: 30px;
-    outline: 1px solid tomato;
+.team-list>.item:not(:last-child) {
+    margin-right: 30px;
 }
 
+
 .team-names {
+    margin-bottom: 10px;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;
@@ -304,6 +304,7 @@ body {
 }
 
 .team-positions {
+    padding-bottom: 30px;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
@@ -314,6 +315,16 @@ body {
 
     color: var(--second-txt-color)
 }
+
+.card-thumb {
+    margin-bottom: 30px;
+}
+
+.card {
+    box-shadow: var(--card-shadow);
+    border-radius: 0px 0px 4px 4px;
+}
+
 
 /* footer */
 .footer {
