@@ -203,7 +203,7 @@ body {
     margin-bottom: 94px;
 }
 
-.listnon>.items:not(:last-child) {
+.listnon>.item:not(:last-child) {
     margin-right: 30px;
 }
 
