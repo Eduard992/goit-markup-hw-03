@@ -45,7 +45,6 @@ p {
     margin-right: auto;
     padding-left: 15px;
     padding-right: 15px;
-    outline: 2px solid red;
 }
 
 img {
@@ -201,7 +200,6 @@ body {
 .listnon {
     display: flex;
     list-style-type: none;
-    margin-bottom: 94px;
 }
 
 .listnon>.item:not(:last-child) {
@@ -229,9 +227,6 @@ body {
 
 /* what We Do */
 
-.wedo-main {
-    margin-bottom: 94px;
-}
 
 .wedo-title {
     margin-bottom: 50px;
@@ -253,14 +248,14 @@ body {
 }
 
 .wedo-list>.item {
-    flex-basis: calc(100%/3);
+    flex-basis: calc((100% - 90px) / 3);
     margin-left: 30px;
 }
 
 /* our team */
 
 .team-main {
-    padding-bottom: 94px;
+    /* padding-bottom: 94px; */
     background-color: var(--third-bg-color);
 }
 
@@ -282,11 +277,13 @@ body {
 .team-list {
     padding-bottom: 108px;
     display: flex;
+    margin-left: -30px;
     list-style-type: none;
 }
 
-.team-list>.item:not(:last-child) {
-    margin-right: 30px;
+.team-list>.item {
+    flex-basis: calc((100% - 120px) / 4);
+    margin-left: 30px;
 }
 
 .team-list>.item {
@@ -380,24 +377,44 @@ body {
 
 
 .contactsf {
-   display: flex;
+    display: flex;
 }
 
 
 
 /* !!!!!!PORTFOLIO!!!! */
 
+.header {
+    border: 1px solid #ECECEC;
+    height: 80px;
+}
+
 /* filters */
+
+.border {
+    outline: 1px solid red;
+    border: 1px solid #EEEEEE;
+    border-top: none;
+}
+
 .filter {
     display: flex;
     flex-wrap: wrap;
     list-style-type: none;
-
+    margin-left: -30px;
+    margin-top: -30px;
 }
 
-.filter> .item {
-    outline: 1px solid   red;
-    flex-basis: calc(100% / 3);
+.filter>.item {
+    flex-basis: calc((100% - 90px) / 3);
+    margin-left: 30px;
+    margin-top: 30px;
+    border: 1px solid #EEEEEE;
+    border-top: none;
+}
+
+.filter>.item:nth-child(3n) {
+    margin-right: 0;
 }
 
 .filter-list {
@@ -423,14 +440,24 @@ body {
 }
 
 
+
+
 .portfolio-list {
+    padding-left: 24px;
+    padding-bottom: 4px;
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
     color: var(--main-txt-color)
 }
 
+.portfolio-img {
+    padding-bottom: 20px;
+}
+
 .portfolio-expl {
+    padding-left: 24px;
+    padding-bottom: 20px;
     font-size: 16px;
     line-height: 1.9;
     letter-spacing: 0.03em;
@@ -442,7 +469,6 @@ body {
     height: 80px;
     align-items: center;
     display: flex;
-    outline: 2px solid red;
 }
 
 .filter-button {
@@ -456,4 +482,3 @@ body {
 .filter-button>.item:not(:last-child) {
     margin-right: 8px;
 }
-
