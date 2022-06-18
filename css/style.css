@@ -392,7 +392,6 @@ body {
 /* filters */
 
 .border {
-    outline: 1px solid red;
     border: 1px solid #EEEEEE;
     border-top: none;
 }
@@ -408,9 +407,7 @@ body {
 .filter>.item {
     flex-basis: calc((100% - 90px) / 3);
     margin-left: 30px;
-    margin-top: 30px;
-    border: 1px solid #EEEEEE;
-    border-top: none;
+    margin-top: 30px;    
 }
 
 .filter>.item:nth-child(3n) {
@@ -439,21 +436,16 @@ body {
     text-decoration: none;
 }
 
-
-
-
 .portfolio-list {
     padding-left: 24px;
     padding-bottom: 4px;
+    padding-top: 20px;
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
     color: var(--main-txt-color)
 }
 
-.portfolio-img {
-    padding-bottom: 20px;
-}
 
 .portfolio-expl {
     padding-left: 24px;
