@@ -45,6 +45,7 @@ p {
     margin-right: auto;
     padding-left: 15px;
     padding-right: 15px;
+    outline: 2px solid red;
 }
 
 img {
@@ -331,13 +332,14 @@ body {
 
 /* footer */
 .footer {
+    display: flex;
     background-color: var(--second-bg-color);
     padding-bottom: 60px;
     padding-top: 60px;
 }
 
 .logo-footer {
-    display: block;
+    display: flex;
     margin-bottom: 20px;
 
     color: var(--hover-txt-color);
@@ -352,6 +354,7 @@ body {
 }
 
 .address {
+    padding-bottom: 9px;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
@@ -371,6 +374,14 @@ body {
     letter-spacing: 0.03em;
 }
 
+.contactsf:not(:last-child) {
+    padding-bottom: 9px;
+}
+
+
+.contactsf {
+   display: flex;
+}
 
 
 
@@ -378,10 +389,20 @@ body {
 
 /* filters */
 .filter {
+    display: flex;
+    flex-wrap: wrap;
     list-style-type: none;
+
+}
+
+.filter> .item {
+    outline: 1px solid   red;
+    flex-basis: calc(100% / 3);
 }
 
 .filter-list {
+    padding: 8px 22px;
+    border-radius: 4px;
     cursor: pointer;
     border: none;
     font-family: inherit;
@@ -415,3 +436,24 @@ body {
     letter-spacing: 0.03em;
     color: var(--second-txt-color)
 }
+
+.con {
+    margin-bottom: 90px;
+    height: 80px;
+    align-items: center;
+    display: flex;
+    outline: 2px solid red;
+}
+
+.filter-button {
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+
+    list-style: none;
+}
+
+.filter-button>.item:not(:last-child) {
+    margin-right: 8px;
+}
+
